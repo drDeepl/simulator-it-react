@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Button } from "primereact/button";
-import { Dialog } from "primereact/dialog";
+
 import preview_img from "../assets/img/preview_img.png";
 import UnityComponent from "../components/unity/unity.component";
 

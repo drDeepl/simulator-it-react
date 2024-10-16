@@ -1,9 +1,8 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useState } from "react";
 
 import { Unity, useUnityContext } from "react-unity-webgl";
 import styles from "./unity.module.scss";
-import { ProgressBar } from "primereact/progressbar";
-import { Toast } from "primereact/toast";
+
 import { BlockUI } from "primereact/blockui";
 import { Button } from "primereact/button";
 import { Dialog } from "primereact/dialog";
@@ -21,9 +20,6 @@ const UnityComponent: React.FC<UnityComponentProps> = ({
     unityProvider,
     isLoaded,
     loadingProgression,
-    sendMessage,
-    addEventListener,
-    removeEventListener,
     requestFullscreen,
     unload,
   } = useUnityContext({
@@ -35,13 +31,6 @@ const UnityComponent: React.FC<UnityComponentProps> = ({
       preserveDrawingBuffer: true,
     },
   });
-
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [screenshotDatas, setScreenshotDatas] = useState<string[]>([]);
-  const [scores, setScores] = useState<[number, number][]>([]);
-  const [loadingPercentage, setLoadingPercentage] = useState<number>(
-    loadingProgression
-  );
 
   const [blocked, setBlocked] = useState(true);
 
