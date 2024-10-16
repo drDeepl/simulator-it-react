@@ -46,21 +46,19 @@ const MainLayout: React.FC = () => {
 
           <div className="preview-container">
             <img className="preview-img" src={preview_img} alt="Preview" />
-
-            <Button className="preview-btn" onClick={onClickToPlayGame}>
+            <Button
+              className="preview-btn max-h-2rem mt-1"
+              size="small"
+              onClick={onClickToPlayGame}
+            >
               Играть
             </Button>
           </div>
-          <Dialog
-            header="Header"
-            visible={isPlayGame}
-            onHide={() => {
-              setIsPlayGame(false);
-            }}
-            style={{ width: "50vw" }}
-          >
-            <UnityComponent onClickCloseGame={onClickCloseGame} />
-          </Dialog>
+
+          <UnityComponent
+            isPlayGame={isPlayGame}
+            onClickCloseGame={onClickCloseGame}
+          />
         </div>
       </div>
       <div className="marquee-container">
