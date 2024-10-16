@@ -1,0 +1,125 @@
+.card-main-layer {
+  border-radius: $border-radius !important;
+  max-width: 35em;
+}
+
+.card-main-layer-history {
+  min-width: 100vw !important;
+  min-height: 100vh !important;
+}
+
+.card-main-layout-success {
+  border-top: 7.5px solid $color-green;
+}
+
+.card-history-main-layer {
+  height: 19vw;
+  width: 19vw;
+  border: 5px solid $color-white;
+  background-color: $beige-color;
+  cursor: pointer;
+  transform: rotate(5deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // transition: width 0.5s, height 0.5s;
+}
+
+.card-history-main-layer:nth-child(2n-1) {
+  transform: rotate(-5deg);
+}
+
+.card-history-main-layer:hover {
+  // width: 20vw;
+  // height: 20vw;
+  box-shadow: 5px 5px 5px 5px $color-grey-shadow;
+}
+
+.card-title-history {
+  width: 17.5em;
+  font-weight: 500;
+  position: absolute;
+  z-index: 100;
+  bottom: -2em;
+  color: $color-white;
+}
+
+.card-title-history > span {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: $color-text;
+}
+.card-history-img {
+  z-index: -3;
+  height: 18vw;
+  width: 18vw;
+  filter: blur(1px);
+}
+
+.history-card-content {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center;
+}
+
+.history-card-content > p {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.story-card {
+  background-color: $color-crema-transparent;
+  margin: 1em !important;
+  max-width: 20em;
+  max-height: 12em;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center !important;
+  border-radius: 10px;
+}
+
+.soft-shadow {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px !important;
+}
+
+.card-header-story {
+  background-color: $color-white;
+  margin-bottom: 1em;
+  // border-radius: 10px;
+  border-radius: 10px;
+}
+
+.story-card-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.story-card-add {
+  width: 20em;
+  height: 12em;
+}
+
+.story-card:hover {
+  border: 2px solid $color-green;
+}
+
+.card-story-actions {
+  background-color: $color-white !important;
+}
+
+.card-story-menu {
+  align-items: end;
+  cursor: pointer;
+}
+
+.card-story-menu:hover > * {
+  color: $color-green;
+}
+
+.card-preview-img {
+  border-radius: 17px;
+}

@@ -1,0 +1,28 @@
+.va-avatar {
+  border: 2px solid $color-white;
+}
+
+.main-border-radius {
+  border-radius: $border-radius !important;
+}
+
+.border-top-green {
+  border-radius: $border-radius !important;
+  border-top: $border-top-width solid $color-green !important;
+}
+
+.border-left-red {
+  border-left: $border-top-width solid $color-red !important;
+}
+
+.border-top-yellow {
+  border-radius: $border-radius !important;
+  border-top: $border-top-width solid $color-yellow !important;
+}
+.va-navbar {
+  border-radius: $border-radius;
+  margin-top: -0.99em;
+}
+
+.va-modal_inner {
+}

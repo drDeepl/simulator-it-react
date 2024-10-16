@@ -1,0 +1,133 @@
+.main-content {
+  background-color: $color-crema;
+  min-height: 88vh;
+}
+.main-preview {
+  // width: 40em;
+  // height: 35em;
+  // background-image: url('img/preview_img.png');
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: start;
+  margin: 3em;
+  position: relative;
+  z-index: 10;
+}
+
+.preview-container {
+  // position: relative;
+  max-width: 42vw;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: $color-white;
+  border: 2px solid $color-soft-black;
+  box-shadow: 0px 0px 0px $color-soft-black;
+  border-radius: 17px;
+}
+
+.preview-container img {
+  display: block;
+  object-fit: cover;
+  // margin-left: 2em;
+  max-width: 40vw;
+  background-color: $color-white;
+  margin: 1em;
+  position: relative;
+}
+
+.main-preview-layout {
+  //   background-color: rgba(229, 209, 184, 0.25);
+  padding: 5em;
+  display: grid;
+  gap: 3em;
+  grid-template-columns: 0.7fr 1fr;
+  justify-content: center;
+  align-items: center;
+  border-radius: $border-radius;
+}
+.preview-description {
+  display: flex;
+  flex-direction: column;
+  justify-items: end;
+
+  //   grid-template-columns: 3fr 2fr;
+}
+
+.preview-description > p {
+  font-weight: bold;
+  font-size: 1.3em;
+  background-color: $color-white;
+  padding: 1em;
+  border-radius: $border-radius;
+  border: 2px solid $color-soft-black;
+
+  box-shadow: -10px 10px 0px rgba(0, 0, 0, 1);
+  z-index: 10 !important;
+}
+
+.preview-btn {
+  background-color: #2a8bd8 !important;
+  width: 9em;
+  z-index: 999 !important;
+  font-weight: 600;
+  border-radius: $border-radius;
+  position: absolute;
+  top: 55%;
+  right: 30%;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-preview-layout {
+    grid-template-columns: 1fr;
+  }
+  .preview-img {
+    min-width: 100% !important;
+  }
+
+  .preview-btn {
+    right: 40%;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-container {
+  background-color: $color-soft-black;
+  overflow-x: hidden !important;
+}
+
+.marquee {
+  width: 100%;
+  color: $color-white;
+  overflow-x: hidden !important;
+  white-space: nowrap;
+  animation: marquee 13s linear infinite;
+  display: flex;
+}
+
+.marquee > span {
+  font-size: 1.5em;
+  letter-spacing: 5px;
+  margin: 0 1em;
+}
+
+.container {
+  perspective: 1000px;
+}
+
+.block {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  transform-style: preserve-3d;
+  transform: rotateY(45deg);
+  transition: all 0.5s ease;
+}

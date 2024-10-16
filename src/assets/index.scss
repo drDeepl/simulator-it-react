@@ -1,0 +1,30 @@
+// @import "./reset.scss";
+@import "./vars.scss";
+@import "./common/border.scss";
+@import "./common/button.scss";
+@import "./common/card.scss";
+@import "./common/container.scss";
+@import "./common/font.scss";
+@import "./common/icon.scss";
+@import "./common/layout.scss";
+@import "./common/mainlayout.scss";
+@import "./common/modal.scss";
+@import "./common/navbar.scss";
+@import "./common/profile.scss";
+@import "./common/sidebar.scss";
+@import "./common/wrapper.scss";
+@import "primeflex/primeflex.css";
+@import "primeicons/primeicons.css";
+@import "primereact/resources/themes/lara-light-cyan/theme.css";
+
+@font-face {
+  font-family: "Play";
+  src: url("./fonts/Play-Regular.ttf") format("truetype");
+}
+
+body {
+  color: $color-text;
+  height: 100%;
+  font-family: "Play", sans-serif;
+  margin: 0;
+}

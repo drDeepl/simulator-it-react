@@ -1,0 +1,63 @@
+.icon-layout-pagination {
+  justify-content: center;
+  background-color: $color-white !important;
+  border-radius: 7px;
+  padding: 0.2em;
+  width: 2em;
+  height: 2em;
+}
+
+.icon-right-arrow {
+  rotate: 180deg;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  20% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-animate {
+  animation: spin 1.5s infinite;
+}
+
+.icon-animate-hb {
+  animation: heartBeat 1.5s infinite;
+}
+
+// .n-step-indicator {
+//   border: 1px solid $color-yellow !important;
+//   background-color: $color-yellow !important;
+// }
+
+// .n-step-indicator > svg {
+//   fill: $color-white !important;
+// }
+
+// .n-base-icon {
+//   color: $color-yellow !important;
+// }

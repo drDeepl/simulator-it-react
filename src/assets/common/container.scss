@@ -1,0 +1,174 @@
+.nav-container {
+  display: grid !important;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+}
+
+.main-container {
+  // background-color: $color-soft-black;
+}
+
+.game-container {
+  width: 100%;
+  min-height: 90vh;
+}
+
+.container-choice-history {
+  margin: 2em 1.5em;
+  background-color: $color-grey-shadow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-card-stories {
+  margin: 1em 1em;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 1em;
+}
+
+.container-header-profile {
+  height: 21em;
+}
+
+.container-empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  height: 50svh !important;
+}
+
+.empty-block {
+  align-self: center;
+  width: 10em;
+  border-radius: $border-radius-soft;
+  padding: 1em;
+  background-color: $color-white;
+}
+
+.container-cards {
+  padding-top: 1em;
+  padding-bottom: 1em !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1280px) {
+  .container-card-stories {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+.empty-stories-container {
+  margin-top: 2em;
+}
+
+.preview-story-container {
+  margin: 1em 2em;
+}
+
+.preview-story-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pagination-container {
+  margin-top: 1em;
+}
+
+// .story-chema-container {
+//   max-width: 10em;
+//   max-height: 10em;
+// }
+
+.story-image-container > img {
+  width: 30em;
+  height: 20em;
+}
+
+.story-description-block-container {
+  width: 33.5em;
+}
+
+.rotate-0-deg {
+  rotate: 0deg;
+  transition: rotate 0.5s;
+}
+
+.rotate-180-deg {
+  rotate: 180deg;
+  transition: rotate 0.5s;
+}
+
+.info-user-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hover-container {
+  background-color: $color-white;
+}
+
+.hover-container:hover > * {
+  background-color: $color-grey-shadow !important;
+}
+
+.user-progress-container .n-progress-graph-line-rail {
+  background-color: rgba(53, 53, 53, 0.5) !important;
+}
+
+.user-progress-container .n-progress-icon {
+  font-weight: bold;
+}
+.user-progress-container .n-progress-graph-line-fill {
+  background-color: $color-acid-green !important;
+}
+
+.stats-block-container {
+  max-width: 39em;
+  max-height: 59em;
+}
+
+// .user-profile-content-container {
+//   margin-right: 3em;
+//   // padding-right: 2em;
+//   padding-left: 2em;
+// }
+
+.stats-row-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label-row {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.story-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  // border: 2px solid $color-white;
+  // width: 2.2em;
+  // height: 2.2em;
+}
+.story-info-container > span {
+  text-align: center;
+  font-size: 1.1em;
+  padding-bottom: 0.3em;
+  // color: $color-white;
+}
+
+.preview-story-card-container > .n-card > .n-card-header {
+  padding-top: 0.5em;
+  display: flex !important;
+  flex-direction: column !important;
+}
